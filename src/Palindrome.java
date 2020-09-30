@@ -1,9 +1,16 @@
+import java.util.Scanner;
+
 public class Palindrome {
     public static void main(String[] args) {
         String[] s = {"java", "Palindrome", "madam", "racecar", "apple", "kayak", "song", "noon"};
         for (int i = 0; i < s.length; i++) {
             System.out.println("Введённое слово "+s [i] +" является палиндромом - " + isPalindrome(s[i]));
         }
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите слово для проверки: ");
+        String str = in.next();
+        System.out.print("Введённое слово является палиндромом - " + isPalindrome(str));
+
     }
     public static String reverseString(String s)
     {
